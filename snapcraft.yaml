@@ -1,0 +1,17 @@
+name: helloWorld
+version: git
+summary: helloWorld
+description: >
+  print helloWorld
+
+confinement: devmode
+
+parts:
+  offlineimap:
+    plugin: python
+    python-version: python3
+    source: .
+
+apps:
+  offlineimap:
+    command: bin/helloWorld
