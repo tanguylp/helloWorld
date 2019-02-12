@@ -1,6 +1,6 @@
-name: helloWorld
+name: helloworld-evesa
 version: git
-summary: helloWorld
+summary: helloworld-evesa
 description: >
   print helloWorld
 
@@ -10,8 +10,8 @@ parts:
   offlineimap:
     plugin: python
     python-version: python3
-    source: .
+    source: https://github.com/tanguylp/helloWorld.git
 
 apps:
   offlineimap:
-    command: bin/helloWorld
+    command: bin/helloworld-evesa
