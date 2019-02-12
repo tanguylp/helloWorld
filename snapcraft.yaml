@@ -1,17 +1,22 @@
 name: helloworld-evesa
 version: git
-summary: helloworld-evesa
+summary: helloworld
 description: >
   print helloWorld
 
+grade : devel
 confinement: devmode
+
+base: core 18
 
 parts:
   offlineimap:
     plugin: python
     python-version: python3
-    source: https://github.com/tanguylp/helloWorld.git
+    source: .
+    source-type: git
+    
 
 apps:
-  offlineimap:
-    command: bin/helloworld-evesa
+  helloworld-evesa:
+    command: bin/helloworld
